@@ -8,6 +8,7 @@ import Product from './Pages/product';
 import Cart from './Pages/cart';
 import LoginSignUp from './Pages/loginSignUp';
 import AboutUs from './Pages/aboutus';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/login' element={<LoginSignUp/>}/>
         <Route path='/aboutus' element ={<AboutUs/>}/>
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
