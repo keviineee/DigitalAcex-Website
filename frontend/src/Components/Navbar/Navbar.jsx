@@ -5,7 +5,7 @@ import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
-    const [menu, setMenu] = useState("shop");
+    const [menu, setMenu] = useState("home");
 
   return (
     <div className='navbar'>
@@ -14,9 +14,9 @@ export const Navbar = () => {
             <p>DigitalAcex</p>
         </div>
         <ul className="nav-menu">
-            <li onClick={()=>{setMenu("shop")}}><Link to='/' className="nav-menu-link">Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("home")}}><Link to='/' className="nav-menu-link">Home</Link>{menu==="home"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("shop")}}><Link to='/shop' className="nav-menu-link">Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
             <li onClick={()=>{setMenu("reviews")}}><Link to='/reviews' className="nav-menu-link">Reviews</Link>{menu==="reviews"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("contact")}}><Link to='/contact' className="nav-menu-link">Contact</Link>{menu==="contact"?<hr/>:<></>}</li>
             <li onClick={()=>{setMenu("aboutus")}}><Link to='/aboutus' className="nav-menu-link">About Us</Link>{menu==="aboutus"?<hr/>:<></>}</li>
         </ul>
         <div className="nav-login-cart">

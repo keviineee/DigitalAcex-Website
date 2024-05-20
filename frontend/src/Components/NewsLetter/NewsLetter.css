@@ -1,15 +1,14 @@
 .newsletter {
-    background-color: red;
     width: 65%;
-    height: 40vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 0 140px;
+    padding: 0 180px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%); 
     gap: 30px;
 }
 
@@ -54,3 +53,4 @@
     font-size: 16px;
     cursor: pointer;
 }
+
